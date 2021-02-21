@@ -1,0 +1,22 @@
+  
+		MySQL instructions:
+        Run command prompt as administrator:
+  
+        C:\>"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld" --install-manual
+	  
+        Win-key + R-key, type in "services.msc" , hit enter, scroll down for MySQL, right click then start
+        Create 'data' folder inside mySQL Server folder
+
+	C:\>"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe" --initialize --console
+        ( If you need to remove the service already installed :
+           C:\> "C:\Program Files\MySQL\MySQL Server 5.7\bin\mysqld" --remove )     
+
+	A temporary password is generated for root@localhost: kOy,r<d0jdya
+
+================================================================================================
+
+
+	Then in the mySQL Shell Script change temporary password with:
+	MySQL:\> ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass';
+
+      
