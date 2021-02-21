@@ -1,5 +1,5 @@
   
-		MySQL instructions:
+        Instructions for installing and startinig MySQL in Windows:
         Run command prompt as administrator:
   
         C:\>"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld" --install-manual
@@ -9,14 +9,16 @@
 
 	C:\>"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe" --initialize --console
         ( If you need to remove the service already installed :
-           C:\> "C:\Program Files\MySQL\MySQL Server 5.7\bin\mysqld" --remove )     
+           C:\> "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld" --remove )     
 
-	A temporary password is generated for root@localhost: kOy,r<d0jdya
+	A temporary password is generated for root@localhost: ugdY&e5>R
 
 ================================================================================================
 
 
 	Then in the mySQL Shell Script change temporary password with:
+	MYSQL\JS> \sql
+        MySQL:\> \connect root@localhost
 	MySQL:\> ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass';
 
       
